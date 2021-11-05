@@ -1,1 +1,95 @@
+/* Chapter 12 SELF TEST  */
 
+*******************************
+1. Enumeration constants are said to be self-typed. What does this mean? 
+
+    Each enumerated constant is the same type 
+    as the list in which it is contained.
+
+*******************************
+2. What class do all enumerations automatically inherit? 
+
+    the Enum class
+
+*******************************
+3. Given the following enumeration, write a program that uses values( ) to show a list 
+of the constants and their ordinal values.
+    enum Tools{
+        SCREWDRIVER, WRENCH, HAMMER, PLIERS
+    }
+    
+    
+
+*******************************
+4. The traffic light simulation developed in Try This 12-1 can be improved with a few 
+simple changes that take advantage of an enumeration’s class features. In the version 
+shown, the duration of each color was controlled by the TrafficLightSimulator class by 
+hard-coding these values into the run( ) method. Change this so that the duration of each 
+color is stored by the constants in the TrafficLightColor enumeration. To do this, you 
+will need to add a constructor, a private instance variable, and a method called getDelay( ). 
+After making these changes, what improvements do you see? On your own, can you think of other 
+improvements? (Hint: Try using ordinal values to switch light colors rather than relying on 
+a switch statement.) 
+
+
+*******************************
+5. Define boxing and unboxing. How does autoboxing/unboxing affect these actions? 
+
+    Boxing: Converting a primitive datatype to an object.
+
+    
+    Unboxing: Converting an object of a wrapper type to 
+    its corresponding primitive value.
+    
+    Autoboxing/unboxing greatly simplifies and streamlines 
+    code that must convert primitive types into objects, 
+    and vice versa.
+
+
+*******************************
+6. Change the following fragment so that it uses autoboxing.
+    Double val = Double.valueOf(123.0);
+
+
+*******************************
+7. In your own words, what does static import do?
+
+    Static import allows members (fields and methods) 
+    that were scoped within their container class as 
+    public static, to be used in Java code without 
+    specifying the class in which the field was defined.
+
+*******************************
+8. What does this statement do?
+    import static java.lang.Interger.parseInt;
+    
+    It imports a method that parses a string argument 
+    as a signed decimal integer.
+
+
+*******************************
+9. Is static import designed for special-case situations, or is it good practice 
+to bring all static members of all classes into view? 
+
+    import static is designed for special case situations. 
+    It is for moving static members of some other class 
+    or interface, especially constants, into scope.
+
+
+*******************************
+10. An annotation is syntactically based on a/an ________________ . 
+
+    An annotation is created through a mechanism based on the interface.
+
+
+*******************************
+11. What is a marker annotation? 
+
+    Annotations that don’t have parameters
+
+*******************************
+12. An annotation can be applied only to methods. True or False?
+
+    True
+    
+*******************************
